@@ -9,7 +9,6 @@ def solution(routes):
         if start <= routes[i][0] <= end:
             start = max(start, routes[i][0])
             end = min(end, routes[i][1])
-            continue
         else:
             end = max(end, routes[i][1])
             answer+=1
